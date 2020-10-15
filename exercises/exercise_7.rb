@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+store = Store.new
+store.name = gets.chomp
+store.save!
+
+# Store.create(name: gets.chomp) #doesn't work for some reason...

@@ -16,7 +16,7 @@ yaletown = Store.create(name: "Yaletown", annual_revenue: 430000, mens_apparel: 
 @mens_stores = Store.where(mens_apparel: true)
 
 pp @mens_stores.select(:name, :annual_revenue)
-# resume here
+
 @womens_stores = Store.where('womens_apparel = ? AND annual_revenue < ?', true, 1000000)
 
 pp @womens_stores.select(:name, :annual_revenue)
